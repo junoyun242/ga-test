@@ -31,7 +31,7 @@ const Layout = () => {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/ga-test" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/faq" element={<FAQ />} />
