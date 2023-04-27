@@ -31,12 +31,13 @@ const Layout = () => {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/ga-test" element={<Layout />}>
+    <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/faq" element={<FAQ />} />
+      <Route path="about" element={<About />} />
+      <Route path="faq" element={<FAQ />} />
     </Route>
-  )
+  ),
+  { basename: "/ga-test" }
 );
 
 function App() {
