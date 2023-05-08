@@ -1,24 +1,16 @@
 import { useState } from "react";
-import ReactGA from "react-ga4";
 
 const Home = () => {
   const [count, setCount] = useState(0);
+  const { gtag } = window;
 
   const onBtnClicked = (isPlus: boolean) => {
-    if (isPlus) {
+    if (!isPlus) {
       setCount(count + 1);
-      ReactGA.event({
-        category: "clicked_plus",
-        action: "clicked_plus",
-        label: "clicked_plus", // optional
-      });
+      gtag("event", "clicked_plus");
     } else {
       setCount(count - 1);
-      ReactGA.event({
-        category: "clicked_minus",
-        action: "clicked_minus",
-        label: "clicked_minus", // optional
-      });
+      gtag("event", "clicked_minus");
     }
   };
   return (
