@@ -15,7 +15,7 @@ const Layout = () => {
   return (
     <>
       <header>
-        <h1>GA Test App</h1>
+        <h1>Teamcity Test App</h1>
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
