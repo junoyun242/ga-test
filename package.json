@@ -6,7 +6,7 @@
   "homepage": "https://junoyun242.github.io/ga-test",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && gh-pages -d dist",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
